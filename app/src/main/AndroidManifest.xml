@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="miniproject.drandroid">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Welcome_Doctor"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Welcome_Patient"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".signUpDoctor"
+            android:parentActivityName=".Welcome_Doctor" />
+        <activity
+            android:name=".DoctorName"
+            android:parentActivityName=".signUpDoctor" />
+        <activity
+            android:name=".DoctorRegNo"
+            android:parentActivityName=".DoctorName" />
+        <activity
+            android:name=".DoctorPassword"
+            android:parentActivityName=".DoctorRegNo" />
+        <activity
+            android:name=".FinalDocSignup"
+            android:parentActivityName=".DoctorPassword" />
+        <activity android:name=".DoctorHome" />
+        <activity
+            android:name=".PatientEmail"
+            android:parentActivityName=".Welcome_Patient" />
+        <activity
+            android:name=".PatientName"
+            android:parentActivityName=".PatientEmail" />
+        <activity
+            android:name=".PatientPassword"
+            android:parentActivityName=".PatientName" />
+        <activity
+            android:name=".FinalPatSignUp"
+            android:parentActivityName=".PatientPassword" />
+        <activity android:name=".PatientHome" />
+        <activity
+            android:name=".DoctorsList"
+            android:parentActivityName=".PatientHome" />
+        <activity
+            android:name=".DoctorQuery"
+            android:parentActivityName=".PatientHome" />
+        <activity
+            android:name=".PatientAppointment"
+            android:parentActivityName=".PatientHome" />
+        <activity
+            android:name=".DocViewQueries"
+            android:parentActivityName=".DoctorHome" />
+        <activity
+            android:name=".DocViewApptmts"
+            android:parentActivityName=".DoctorHome" />
+        <activity
+            android:name=".DoctorWrite"
+            android:parentActivityName=".DoctorHome" />
+        <activity
+            android:name=".PatViewPrescrip"
+            android:parentActivityName=".PatientHome" />
+        <activity
+            android:name=".ShowPrescription"
+            android:parentActivityName=".PatViewPrescrip" />
+        <activity android:name=".About"
+            android:parentActivityName=".MainActivity"></activity>
+    </application>
+
+</manifest>

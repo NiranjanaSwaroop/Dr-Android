@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="miniproject.drandroid.Welcome_Patient">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="-1dp">
+
+        <TextView
+            android:id="@+id/welcomePat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Patient"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="-25dp" />
+
+        <TextView
+            android:id="@+id/logInPatTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/welcomePat"
+            android:layout_below="@+id/welcomePat"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="54dp"
+            android:text="Log in to continue:-"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/userNamePatText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/logInPatTextView"
+            android:layout_marginEnd="29dp"
+            android:layout_marginTop="34dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/userNamePatTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/userNamePatText"
+            android:layout_alignBottom="@+id/userNamePatText"
+            android:layout_alignParentStart="true"
+            android:text="User Name :"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/passwordPatText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/userNamePatText"
+            android:layout_below="@+id/userNamePatText"
+            android:layout_marginTop="13dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/passwordPatTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/passwordPatText"
+            android:layout_alignBottom="@+id/passwordPatText"
+            android:layout_alignParentStart="true"
+            android:text="Password:"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/forgotPatTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/passwordPatText"
+            android:layout_below="@+id/passwordPatText"
+            android:layout_marginTop="49dp"
+            android:text="Unable to log in?"
+            android:textColor="@android:color/holo_blue_bright" />
+
+        <Button
+            android:id="@+id/logInPatButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/forgotPatTextView"
+            android:layout_alignBottom="@+id/forgotPatTextView"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="logInPatient"
+            android:text="Log In"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/signUpPatTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logInPatButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:background="@android:color/holo_blue_bright"
+            android:onClick="enterPatSignup"
+            android:text="Sign Up"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="miniproject.drandroid.DoctorHome">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:id="@+id/wlcmDocTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Welcome"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/docNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/wlcmDocTextView"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/queriesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/prescTextView"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="95dp"
+            android:background="@android:color/holo_blue_bright"
+            android:onClick="showQueries"
+            android:text="Queries"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/aptTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/wlcmDocTextView"
+            android:layout_marginTop="223dp"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="viewAppointments"
+            android:text="Appointments"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/prescTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/aptTextView"
+            android:layout_marginTop="62dp"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="writePescription"
+            android:text="Write prescription to query"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
